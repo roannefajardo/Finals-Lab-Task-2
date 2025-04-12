@@ -1,4 +1,4 @@
-# [Finals-Lab-Task-2](https://github.com/user-attachments/files/19719375/FajardoFLT2.docx)
+# [Finals-Lab-Task-2](https://github.com/user-attachments/files/19719400/FajardoFLT2.docx)
 
 This portfolio showcases my proficiency in creating MySQL databases through the development of a basic student assignment submission system. It outlines the step-by-step process of building tables for students, assignments, and submissions. The task demonstrates the application of proper data types, table relationships, and constraints such as primary keys, foreign keys, and composite keys to establish a functional relational database structure.
 
