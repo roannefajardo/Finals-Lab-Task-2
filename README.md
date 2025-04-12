@@ -68,6 +68,3 @@ This portfolio showcases my proficiency in creating MySQL databases through the 
 - ![Image](https://github.com/user-attachments/assets/be86d660-a18d-4e61-b987-b15c37126861)
 - ![Image](https://github.com/user-attachments/assets/58591056-7f2c-4e5a-a9d7-c89b91a1532d)
 
-
-
-Let me know if you’d like this adapted into a presentation format or if you need help summarizing it further!
