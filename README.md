@@ -43,13 +43,14 @@ This portfolio showcases my proficiency in creating MySQL databases through the 
 ## SQL Query Statements
 
 1. **Student Table**
-- ![Student Query](https://github.com/user-attachments/assets/65bb70d5-9864-46ea-96af-8424b4e79a97)
+- ![Image](https://github.com/user-attachments/assets/cf3b630b-ed7a-40ae-905c-761d14a865b3)
 
 2. **Assignment Table**
-- ![Assignment Query](https://github.com/user-attachments/assets/b8dcd7f3-8443-4be2-9f87-f69e9ba68437)
+- ![Image](https://github.com/user-attachments/assets/94587c19-ade7-4cdd-a858-d5f8a017a86c)
+
 
 3. **Submission Table**
-- ![Image](https://github.com/user-attachments/assets/b65ad885-87d3-44b2-a1e3-79f7ddcee44b)
+- ![Image](https://github.com/user-attachments/assets/625e919a-71b8-4bfe-93c1-7583b3ddde10)
 
 ## Table Structures
 
