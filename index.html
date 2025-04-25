@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roanne's EDM Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #8a2be2);
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 4px 12px #ff69b4;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff;
+      color: #ffb6c1;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #ffccff;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #ffb6c1;
+      margin: 20px auto;
+      display: block;
+      object-fit: cover;
+      box-shadow: 0 0 15px #ff66cc;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      color: #ffccff;
+      text-align: center;
+      text-shadow: 0 0 5px #ff99ff;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #ff69b4;
+      border-radius: 15px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 15px #ff1493;
+    }
+
+    .card p, .card a {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ffe6f0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin: 0.4rem 0;
+      color: #ffb6c1;
+      text-decoration: none;
+      border-bottom: 1px dashed #fff;
+      transition: 0.3s;
+    }
+
+    .card a:hover {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #1a1a1a;
+      color: #ffb6c1;
+      box-shadow: 0 -4px 12px #da70d6;
+    }
+
+    /* Glitter animation */
+    .glitter {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: url('https://i.pinimg.com/originals/0f/38/17/0f3817da1af829075774018b36ebb587.gif');
+      background-repeat: repeat;
+      opacity: 0.08;
+      z-index: 0;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: float 10s infinite;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    .heart::before, .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+      }
+    }
+
+    /* Ensuring images autofit */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glitter"></div>
+
+  <!-- Floating Hearts -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.left = `${Math.random() * 100}%`;
+      heart.style.animationDuration = `${5 + Math.random() * 10}s`;
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <header>
+    <h1>🌸 Finals Lab Task 2 - MySQL Database Creation 🌸</h1>
+    <p>🌷Shining through code and creativity🌷 </p>
+  </header>
+
+  <section>
+    <h2>Portfolio Overview</h2>
+    <div class="card">
+      <p>This portfolio showcases my proficiency in creating MySQL databases through the development of a basic student assignment submission system. It outlines the step-by-step process of building tables for students, assignments, and submissions. The task demonstrates the application of proper data types, table relationships, and constraints such as primary keys, foreign keys, and composite keys to establish a functional relational database structure.</p>
+    </div>
+
+    <h2>Step by Step Process</h2>
+    <div class="card">
+       <h3>1. Creating the <code>student</code> table:</h3>
+  <ul>
+    <li>Define <code>username</code> as <code>VARCHAR(50)</code>.</li>
+    <li>Set <code>username</code> as the table’s <strong>Primary Key</strong>.</li>
+  </ul>
+
+  <h3>2. Creating the <code>assignment</code> table:</h3>
+  <ul>
+    <li>Define <code>shortname</code> as <code>VARCHAR(50)</code> and assign it as the <strong>Primary Key</strong>.</li>
+    <li>Define <code>due_date</code> as a <code>DATE</code> that <strong>cannot be null</strong>.</li>
+    <li>Define <code>url</code> as a <code>VARCHAR(255)</code>, which is <strong>nullable</strong>.</li>
+  </ul>
+
+  <h3>3. Creating the <code>submission</code> table:</h3>
+  <ul>
+    <li>Include <code>username</code> and <code>shortname</code> as <code>VARCHAR(50)</code>.</li>
+    <li>Define <code>version</code> as an <code>INT</code>.</li>
+    <li>Set <code>submit_date</code> as a <code>DATE NOT NULL</code>.</li>
+    <li>Include <code>data</code> as <code>TEXT</code>.</li>
+    <li>Assign a <strong>composite primary key</strong> consisting of (<code>username</code>, <code>shortname</code>, <code>version</code>).</li>
+    <li>Add <strong>foreign key constraints</strong> linking to the <code>student</code> and <code>assignment</code> tables.</li>
+  </ul>
+
+  <h2>Table Relationships</h2>
+
+  <h3>1. <code>student</code> Table</h3>
+  <ul>
+    <li><strong>Primary Key:</strong> <code>username</code></li>
+    <li><strong>Relationship:</strong> One-to-Many with <code>submission</code>: A single student can have multiple submission entries.</li>
+  </ul>
+
+  <h3>2. <code>assignment</code> Table</h3>
+  <ul>
+    <li><strong>Primary Key:</strong> <code>shortname</code></li>
+    <li><strong>Relationship:</strong> One-to-Many with <code>submission</code>: A single assignment may receive several submissions from different students or multiple versions from the same student.</li>
+  </ul>
+
+  <h3>3. <code>submission</code> Table</h3>
+  <ul>
+    <li><strong>Composite Primary Key:</strong> (<code>username</code>, <code>shortname</code>, <code>version</code>)</li>
+    <li><strong>Relationships:</strong>
+      <ul>
+        <li>Many-to-One with <code>student</code>: Each submission is tied to one student.</li>
+        <li>Many-to-One with <code>assignment</code>: Each submission pertains to a single assignment.</li>
+        <li>Bridges a <strong>many-to-many relationship</strong> between students and assignments, while tracking submission versions.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>SQL Query Statements</h2>
+  <ol>
+    <li><strong>Student Table</strong><br>
+      <img src="https://github.com/user-attachments/assets/cf3b630b-ed7a-40ae-905c-761d14a865b3" alt="Student Table Output">
+    </li>
+    <li><strong>Assignment Table</strong><br>
+      <img src="https://github.com/user-attachments/assets/94587c19-ade7-4cdd-a858-d5f8a017a86c" alt="Assignment Table Output">
+    </li>
+    <li><strong>Submission Table</strong><br>
+      <img src="https://github.com/user-attachments/assets/625e919a-71b8-4bfe-93c1-7583b3ddde10" alt="Submission Table Output">
+    </li>
+  </ol>
+
+  <h2>Table Structures</h2>
+  <ol>
+    <li><strong>Student Table Structure</strong><br>
+      <img src="https://github.com/user-attachments/assets/0c46bb9f-b104-4513-a624-2f8e57f85062" alt="Student Table Structure">
+    </li>
+    <li><strong>Assignment Table Structure</strong><br>
+      <img src="https://github.com/user-attachments/assets/366a8cc3-bb11-49e4-bbd9-795eb6fb6393" alt="Assignment Table Structure">
+    </li>
+    <li><strong>Submission Table Structure</strong><br>
+      <img src="https://github.com/user-attachments/assets/a134ed4b-e825-4ed2-a354-68a5c9667143" alt="Submission Table Structure">
+    </li>
+  </ol>
+
+  <h2>Enhanced Entity-Relationship (EER) Diagram</h2>
+  <img src="https://github.com/user-attachments/assets/be86d660-a18d-4e61-b987-b15c37126861" alt="EER Diagram 1">
+  <img src="https://github.com/user-attachments/assets/58591056-7f2c-4e5a-a9d7-c89b91a1532d" alt="EER Diagram 2">
+
+</body>
+</html>
+    </div>
+  </section>
+
+  <footer>
+    🎀Stay Fierce, Stay Fabulous, and keep coding🎀
+  </footer>
+
+</body>
+</html>
